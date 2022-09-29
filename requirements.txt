@@ -1,0 +1,5 @@
+torch
+timm
+ninja
+einops
+fvcore
