@@ -1,4 +1,7 @@
-
+"""
+    Paper: QuadTree Attention for Vision Transformers
+    Link: https://arxiv.org/abs/2201.02767
+"""
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
