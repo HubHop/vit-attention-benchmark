@@ -1,6 +1,6 @@
 # Vision Transformer Attention Benchmark
 
-This repo is a collection of attention mechanisms in vision Transformers. Beside the re-implementation, it provides a comprehensive benchmark on FLOPs, throughput and memory consumption.
+This repo is a collection of attention mechanisms in vision Transformers. Beside the re-implementation, it provides a benchmark on model parameters, FLOPs and CPU/GPU throughput.
 
 
 
@@ -27,7 +27,7 @@ This repo is a collection of attention mechanisms in vision Transformers. Beside
 
 ### Setting
 
-- input: 14 x 14 = 196 tokens
+- input: 14 x 14 = 196 tokens (1/16 scale feature maps in common ImageNet-1K training)
 - batch size for speed testing (images/s): 64
 - embedding dimension:768
 - number of heads: 12
@@ -95,7 +95,7 @@ batch_size 64 throughput on GPU 5104
 | HorNet         | 2.23       | 436.51     | 132       | 3996      | [hornet.py](https://github.com/HubHop/vit-attention-benchmark/blob/main/attentions/hornet.py) |
 | HiLo           | 2.20       | **298.30** | **1029**  | **5104**  | [hilo.py](https://github.com/HubHop/vit-attention-benchmark/blob/main/attentions/hilo.py) |
 
-
+**Note:** Each method has its own hyperparameters. For a fair comparison on 1/16 scale feature maps, all methods in the above table adopt their default 1/16 scale settings, as shown in their released code repo. For example, when dealing with 1/16 scale feature maps, HiLo in LITv2 adopt a window size of 2 and alpha of 0.9. Future works will consider more scales and memory benchmarking.
 
 ## License
 
