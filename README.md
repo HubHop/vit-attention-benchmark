@@ -80,14 +80,14 @@ batch_size 64 throughput on GPU 5104
 
 | Name           | Params (M) | FLOPs (M)  | CPU Speed | GPU Speed | Demo                                                         |
 | -------------- | ---------- | ---------- | --------- | --------- | ------------------------------------------------------------ |
-| MSA            | 2.36       | 521.43     | 505       | 4525      | [msa.py](https://github.com/HubHop/vit-attention-benchmark/blob/main/attentions/msa.py) |
+| MSA            | 2.36       | 521.43     | 505       | 4403      | [msa.py](https://github.com/HubHop/vit-attention-benchmark/blob/main/attentions/msa.py) |
 | Cross Window   | 2.37       | 493.28     | 325       | 4334      | [cross_window.py](https://github.com/HubHop/vit-attention-benchmark/blob/main/attentions/cross_window.py) |
 | DAT            | 2.38       | 528.69     | 223       | 3074      | [dat.py](https://github.com/HubHop/vit-attention-benchmark/blob/main/attentions/dat.py) |
 | Performer      | 2.36       | 617.24     | 181       | 3180      | [performer.py](https://github.com/HubHop/vit-attention-benchmark/blob/main/attentions/performer.py) |
 | Linformer      | 2.46       | 616.56     | 518       | 4578      | [linformer](https://github.com/HubHop/vit-attention-benchmark/blob/main/attentions/linformer.py) |
 | SRA            | 4.72       | 419.56     | 710       | 4810      | [sra.py](https://github.com/HubHop/vit-attention-benchmark/blob/main/attentions/sra.py) |
-| Local Window   | 2.36       | 477.17     | 631       | 4436      | [shifted_window.py](https://github.com/HubHop/vit-attention-benchmark/blob/main/attentions/shifted_window.py) |
-| Shifted Window | 2.36       | 477.17     | 374       | 4546      | [shifted_window.py](https://github.com/HubHop/vit-attention-benchmark/blob/main/attentions/shifted_window.py) |
+| Local Window   | 2.36       | 477.17     | 631       | 4537      | [shifted_window.py](https://github.com/HubHop/vit-attention-benchmark/blob/main/attentions/shifted_window.py) |
+| Shifted Window | 2.36       | 477.17     | 374       | 4351      | [shifted_window.py](https://github.com/HubHop/vit-attention-benchmark/blob/main/attentions/shifted_window.py) |
 | Focal          | 2.44       | 526.85     | 146       | 2842      | [focal.py](https://github.com/HubHop/vit-attention-benchmark/blob/main/attentions/focal.py) |
 | XCA            | 2.36       | 481.69     | 583       | 4659      | [xca.py](https://github.com/HubHop/vit-attention-benchmark/blob/main/attentions/xca.py) |
 | QuadTree       | 5.33       | 613.25     | 72        | 3978      | [quadtree.py](https://github.com/HubHop/vit-attention-benchmark/blob/main/attentions/quadtree.py) |

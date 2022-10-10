@@ -27,7 +27,7 @@ def plot_cpu():
     names = names[indices]
 
     fig, ax = plt.subplots(figsize=(8, 5), dpi=30)
-    bars = ax.bar(names, gpu_speeds, width=0.6, color='#1d3557')
+    bars = ax.bar(names, gpu_speeds, width=0.6, color='#669DB3FF')
     ax.bar_label(bars)
     ax.set_axisbelow(True)
     fig.autofmt_xdate(rotation=45)
@@ -66,7 +66,7 @@ def plot_gpu():
 
     # fig, ax = plt.subplots(figsize=(6, 5), dpi=30)
     fig, ax = plt.subplots(figsize=(8, 5), dpi=30)
-    bars = ax.bar(names, gpu_speeds, width=0.6, color='#1d3557')
+    bars = ax.bar(names, gpu_speeds, width=0.6, color='#669DB3FF')
     ax.bar_label(bars)
     ax.set_axisbelow(True)
     fig.autofmt_xdate(rotation=45)
